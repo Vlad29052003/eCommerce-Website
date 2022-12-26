@@ -15,85 +15,87 @@ a:visited {
   color: white;
   text-decoration: none;
 }
-*
-{
+
+* {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 }
-.meniu
-{
+
+.meniu {
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	background: rgb(247, 47, 47);
+	height: 91px;
 	text-align: center;
+	vertical-align: middle;
 	width: 100%;
 	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
 	position: fixed;
 }
-.meniu ul
-{
+
+.meniu ul {
 	display: inline-flex;
 	list-style: none;
 	color: white;
 }
-.meniu ul li
-{
-	padding-top: 23px;
-	padding-left: 25px;
-	padding-right: 25px;
-	padding-bottom: 23px;
+
+.meniu ul li {
+	padding: 25px;
 	font-size: 25px;
 }
-.meniu ul li:hover
-{
+
+.meniu ul li:hover {
 	background: rgb(243, 148, 25);
 }
-.submeniu
-{
+
+.submeniu {
 	display: none;
 	position: absolute;
 }
-.meniu ul li:hover .submeniu
-{
+
+.meniu ul li:hover .submeniu {
 	width: 234px;
 	display: block;
 	background: rgb(247, 47, 47); 
 	margin-left: -25px;
-	margin-top: 25px;
+	margin-top: 22px;
 	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
 }
-.meniu ul li:hover .submeniu ul
-{
+
+.meniu ul li:hover .submeniu ul {
 	display: block;
 	margin: 9.9px; 
 }
-.meniu ul li:hover .submeniu ul li
-{
+
+.meniu ul li:hover .submeniu ul li {
 	font-size: 15.5px;
 	padding: 10px;
 	border-bottom: 1px solid white;
 	text-align: center;
 	border-radius: 0;
 }
-.meniu ul li:hover .submeniu ul li:last-child
-{
+
+.meniu ul li:hover .submeniu ul li:last-child {
 	border-bottom: none;
 }
-.meniu ul li:hover .submeniu ul li a:hover
-{
-	color: rgb(180,180,180);
+
+.meniu ul li:hover .submeniu ul li a:hover {
+	color: rgb(247, 47, 47);
 }
 
-.right
-{
-	display: flex;
+.left {
+	float: left;
+	margin-left: 10%;
+	height: 91px;
+}
+
+.right {
 	float: right;
+	margin-right: 10%;
+	display: inline-flex;
+	height: 91px;
 }
 
-.shoppingcart {
-	height: 50px;
-	margin-top: -5px;
-}
+
 
 body {
 	background: rgb(255, 255, 255);;
