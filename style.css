@@ -1,0 +1,92 @@
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+.meniu a:link {
+  color: white;
+  text-decoration: none;
+}
+.meniu a:visited {
+  color: white;
+  text-decoration: none;
+}
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.meniu
+{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	background: rgb(247, 47, 47);
+	text-align: center;
+	width: 100%;
+	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+	position: fixed;
+}
+.meniu ul
+{
+	display: inline-flex;
+	list-style: none;
+	color: white;
+	white-space: nowrap;
+}
+.meniu ul li
+{
+	padding-top: 23px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 23px;
+	font-size: 25px;
+}
+.meniu ul li:hover
+{
+	background: rgb(243, 148, 25);
+}
+.submeniu
+{
+	display: none;
+	position: absolute;
+}
+.meniu ul li:hover .submeniu
+{
+	width: 234px;
+	display: block;
+	background: rgb(247, 47, 47); 
+	margin-left: -25px;
+	margin-top: 25px;
+	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+}
+.meniu ul li:hover .submeniu ul
+{
+	display: block;
+	margin: 9.9px; 
+}
+.meniu ul li:hover .submeniu ul li
+{
+	font-size: 15.5px;
+	padding: 10px;
+	border-bottom: 1px solid white;
+	text-align: center;
+	border-radius: 0;
+}
+.meniu ul li:hover .submeniu ul li:last-child
+{
+	border-bottom: none;
+}
+.meniu ul li:hover .submeniu ul li a:hover
+{
+	color: rgb(180,180,180);
+}
+
+.right
+{
+	display: flex;
+	float: right;
+}
