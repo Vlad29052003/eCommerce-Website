@@ -82,14 +82,17 @@ a:visited {
 	color: rgb(247, 47, 47);
 }
 
-.meniu img {
-	padding-top: 10%;
-	max-height: 80%;
-}
-
 .left {
 	float: left;
 	margin-left: 10%;
+	height: 100%;
+}
+
+.middle {
+	height: 100%;
+}
+
+.middle img {
 	height: 100%;
 }
 
@@ -98,6 +101,11 @@ a:visited {
 	margin-right: 10%;
 	display: inline-flex;
 	height: 100%;
+}
+
+.right img {
+	padding-top: 10%;
+	max-height: 80%;
 }
 
 
