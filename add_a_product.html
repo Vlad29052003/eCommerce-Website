@@ -29,9 +29,18 @@
                         <label>Details</label>
                     </div>
                     <div class="field">
-                        <input type="number" required>
+                        <input type="number" step="0.01" min="0.01" required>
                         <span></span>
                         <label>Price </label>
+                    </div>
+                    <div class="field">
+                        <input type="number" min="1" required>
+                        <span></span>
+                        <label>Stock</label>
+                    </div>
+                    <div class="product_image">
+                        <label for="file">Image </label>
+                        <input type="file" id="img" name="img" accept="image/*">
                     </div>
                     <input type="submit" value="Add Product">
                     <div class="links" style="margin-top: 10px;"><a href="seller_main_page.html" class="link_text"><i>Go back!</i></a></div>
