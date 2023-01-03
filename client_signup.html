@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>CASTEX</title>
+        <link rel="icon" href="Images/icon.png">
+        <link rel="stylesheet" type="text/css" href="Styles/menu_style.css">
+        <link rel="stylesheet" type="text/css" href="Styles/login_style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="logo"><a href="index.html"><img src = "Images/logo.png"></a></div>
+            <div class="form_div">
+                <form action="client_login.html" method="PUT">
+                    <div class="field">
+                        <input type="text" required>
+                        <span></span>
+                        <label for="Name">First Name</label>
+                    </div>
+                    <div class="field">
+                        <input type="text" required>
+                        <span></span>
+                        <label for="Name">Last Name</label>
+                    </div>
+                    <div class="field">
+                        <input type="date" required placeholder="Date of Birth">
+                        <span></span>
+                        
+                    </div>
+                    <div class="field">
+                        <input type="email" required>
+                        <span></span>
+                        <label for="Email">Email</label>
+                    </div>
+                    <div class="field">
+                        <input type="password" required>
+                        <span></span>
+                        <label for="Password">Password</label>
+                    </div>
+                    <div class="field">
+                        <input type="password" required>
+                        <span></span>
+                        <label for="Password">Repeat Password</label>
+                    </div>
+                    <div class="radio_field">
+                        <div>Gender:</div>
+                        <div class="radio_container">
+                            <input type="radio" name="gender" value="male" required>
+                            <label for="male" style="padding-right: 25px;">Male</label>
+                            <input type="radio" name="gender" value="female" required>
+                            <label for="female" style="padding-right: 5px;">Female</label>
+                        </div>
+                    </div>
+                    <input type="submit" value="Sign Up">
+                    <div class="links" style="margin-top: 10px;"><a href="seller_signup.html" class="link_text"><i>I am a seller!</i></a></div>
+                    <div class="links">Already have an account? <a href="client_login.html" class="link_text"><i>Sign in</i></a></div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
