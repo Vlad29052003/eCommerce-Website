@@ -1,0 +1,42 @@
+.produs1 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px;
+    place-items: Center;
+    height: 500px;
+    margin: auto;
+    padding: 50px;
+    margin-left: 20%;
+}
+
+.box {
+    background: rgb(249, 218, 176);
+    text-align: center;
+    box-shadow: -1px 0 5px 5px rgba(0,0,0,0.05);
+}
+
+.produs1 img {
+    width: 100%;
+}
+.text {
+    padding: 20px;
+}
+
+.text href {
+    font-size: 15px;
+}
+
+.rate i {
+    font-size: 10px;
+    color:rgb(242, 255, 0);
+    margin-bottom: 10px;
+}
+
+.rate i:nth-child(4),
+.rate i:nth-child(5) {
+    color:aqua;
+}
+
+.checked {
+    color: orange;
+  }
