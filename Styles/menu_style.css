@@ -85,6 +85,7 @@ a:visited {
 .menu #has_submenu:hover .submenu {
 	width: 200px;
 	display: block;
+	overflow: auto;
 	background: rgb(247, 47, 47); 
 	margin-left: -1%;
 	top: 100px;
@@ -92,7 +93,6 @@ a:visited {
 }
 
 .submenu ul {
-	display: block;
 	margin: 5%; 
 }
 
