@@ -1,0 +1,44 @@
+.container {
+    position: relative;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+
+.container table {
+    width: 100%;
+}
+
+.container .left {
+    width: 20%;
+}
+
+.container .mid {
+    width: 60%;
+    height: 100%;
+    padding: 2px;
+}
+
+.container .right {
+    width: 20%;
+}
+
+.container h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+.container .justify {
+    text-align: justify;
+}
+
+.container .help {
+    background-color: aqua;
+}
+
+.container .complaints {
+    background-color: blue;
+}
+
+
+.container .returns {
+    background-color: blueviolet;
+}
