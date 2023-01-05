@@ -80,6 +80,7 @@ a:visited {
 	display: none;
 	position: absolute;
 	font-size: 40px;
+	z-index: 1;
 }
 
 .menu #has_submenu:hover .submenu {
