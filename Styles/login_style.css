@@ -154,12 +154,12 @@ input[type="date"] {
     margin: 0;
     display: inline-flex;
     color: #adadad;
-    margin-bottom: 20px;
     font-size: 19px;
     padding-right: 45px;
 }
 
 .product_image input[type="file"]::-webkit-file-upload-button{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: rgb(247, 47, 47);
     border: none;
     height: 30px;
@@ -175,5 +175,65 @@ input[type="date"] {
     font-size: 20px;
     transition: .5s;
 }
+
+.selection {
+    position: relative;
+    border-bottom: 1px solid #adadad;
+    margin: 30px 0;
+}
+
+.selection select {
+    background: transparent;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 19px;
+    color: #adadad;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    height: 40px;
+}
+
+.selection span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left:  0;
+    width: 0%;
+    height: 1px;
+    background: rgb(247, 47, 47);
+}
+
+.selection select:focus ~ span::before {
+    width: 100%;
+}
+
+.description {
+    position: relative;
+    margin: 30px 0;
+}
+
+.description textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    outline: none;
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-color: #adadad;
+    padding: 3px;
+}
+
+.description textarea::placeholder {
+    font-size: 20px;
+    color: #adadad;
+    padding-left: 2px;
+}
+
+.description textarea:focus {
+    border-color: rgb(247, 47, 47);
+}
+
+
 
 

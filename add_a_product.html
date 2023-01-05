@@ -19,16 +19,6 @@
                         <label>Product Name</label>
                     </div>
                     <div class="field">
-                        <input type="text" required>
-                        <span></span>
-                        <label>Category</label>
-                    </div>
-                    <div class="field">
-                        <input type="text" required>
-                        <span></span>
-                        <label>Details</label>
-                    </div>
-                    <div class="field">
                         <input type="number" step="0.01" min="0.01" required>
                         <span></span>
                         <label>Price </label>
@@ -38,9 +28,27 @@
                         <span></span>
                         <label>Stock</label>
                     </div>
+                    <div class="selection">
+                        <select name="Category" id="category" required>
+                            <option selected disabled hidden>Choose a Category</option>
+                            <option value="phone">Phones</option>
+                            <option value="laptop">Laptops</option>
+                            <option value="desktop">Desktops</option>
+                            <option value="game">Computer Games</option>
+                            <option value="monitor">Monitors</option>
+                            <option value="tv">TVs</option>
+                            <option value="headset">Headsets</option>
+                            <option value="audio">Audio Devices</option>
+                        </select>
+                        <span></span>
+                    </div>
                     <div class="product_image">
                         <label for="file">Image </label>
                         <input type="file" id="img" name="img" accept="image/*">
+                    </div>
+                    <div class="description">
+                        <textarea id="details" name="details" placeholder="Description"></textarea>
+                        <span></span>
                     </div>
                     <input type="submit" value="Add Product">
                     <div class="links" style="margin-top: 10px;"><a href="seller_main_page.html" class="link_text"><i>Go back!</i></a></div>
