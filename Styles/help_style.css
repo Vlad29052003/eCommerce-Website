@@ -13,7 +13,7 @@
 }
 
 .container .mid {
-    width: 60%;
+    
     height: 100%;
     padding: 2px;
 }
@@ -24,6 +24,12 @@
 
 .container h1, h2, h3, h4, h5, h6 {
     text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.align_top {
+    vertical-align: top;
 }
 
 .container .justify {
@@ -31,14 +37,20 @@
 }
 
 .container .help {
-    background-color: aqua;
+    width: 20%;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .container .complaints {
-    background-color: blue;
+    width: 20%;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 
 .container .returns {
-    background-color: blueviolet;
+    width: 20%;
+    padding-left: 25px;
+    padding-right: 25px;
 }
