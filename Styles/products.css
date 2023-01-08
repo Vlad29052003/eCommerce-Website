@@ -1,6 +1,6 @@
 .produs1 {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
     place-items: Center;
     height: 500px;
@@ -10,14 +10,16 @@
 }
 
 .box {
-    background: rgb(249, 218, 176);
+    background: white;
     text-align: center;
-    box-shadow: -1px 0 5px 5px rgba(0,0,0,0.05);
+    width: 60%;
+    box-shadow: -1px 0 5px 5px rgba(0, 0, 0, 0.05);
 }
 
 .produs1 img {
     width: 100%;
 }
+
 .text {
     padding: 20px;
 }
@@ -28,65 +30,48 @@
 
 .rate span {
     font-size: 10px;
-    color:rgb(247, 47, 47);
+    color: rgb(247, 47, 47);
     margin-bottom: 10px;
 }
 
 .rate span:nth-child(4),
 .rate span:nth-child(5) {
-    color:rgb(204, 204, 204);
+    color: rgb(204, 204, 204);
 }
 
 .checked {
     color: orange;
-  }
+}
 
 
-  .b_mid {
+.b_mid {
     width: 25%;
     padding-right: 1%;
     text-align: right;
 }
 
-.filter {
-    width: 0%;
-    text-align: right;
+.cart_button button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgb(247, 47, 47);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
 }
 
-.price_slider {
-    width: 100%; /* Width of the outside container */
-  }
-  
-  /* The slider itself */
-  .slider {
-    -webkit-appearance: none;  /* Override default CSS styles */
-    appearance: none;
-    width: 700%;
-    background: #d3d3d3; /* Grey background */
-    outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-    transition: opacity .2s;
-  }
-  
-  /* Mouse-over effects */
-  .slider:hover {
-    opacity: 1; /* Fully shown on mouse-over */
-  }
-  
-  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
-  .slider::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
-    appearance: none;
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background: rgb(247, 47, 47); 
-    cursor: pointer; /* Cursor on hover */
-  }
-  
-  .slider::-moz-range-thumb {
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background: rgb(247, 47, 47); 
-    cursor: pointer; /* Cursor on hover */
-  }
+.cart_button button:hover {
+    background: rgb(243, 148, 25);
+
+}
+
+.text_product1 :hover {
+    color: rgb(247, 47, 47);
+
+}
+
+.text_product1 {
+    overflow: hidden;
+}
