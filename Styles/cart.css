@@ -31,15 +31,15 @@ td input {
     padding: 5px;
 }
 
-td a{
+.cart_page td a{
     font-size: 12px;
 }
 
-td a:hover {
+.cart_page td a:hover {
     color: rgb(247, 47, 47);
 }
 
-td img{
+.cart_page td img{
     width: 80px;
     height: 80px;
     margin-right: 10px;
@@ -57,10 +57,10 @@ td img{
     max-width: 350px;
 }
 
-td:last-child{
+.cart_page td:last-child{
     text-align: right;
 }
 
-th:last-child{
+.cart_page th:last-child{
     text-align: right;
 }
