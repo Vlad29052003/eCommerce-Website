@@ -1,18 +1,13 @@
 .produs1 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 40px;
-    place-items: Center;
-    height: 500px;
-    margin: auto;
-    padding: 50px;
-    margin-left: 20%;
+    display: flex;
+    width: 40%;
+    margin-left: 5%;
 }
 
 .box {
     background: white;
     text-align: center;
-    width: 60%;
+    width: 70%;
     box-shadow: -1px 0 5px 5px rgba(0, 0, 0, 0.05);
 }
 
