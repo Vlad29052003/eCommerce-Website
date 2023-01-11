@@ -1,8 +1,9 @@
 .filter {
+    padding-right: 50px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    width: 0%;
     padding-left: 50px;
     text-align: left;
+    position: static;
 }
 
 
