@@ -1,8 +1,8 @@
 .cart_page {
-    margin: 80px auto;
+    margin: 50px auto;
 }
 
-table{
+.container table{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     width: 100%;
     border-collapse: collapse;
@@ -13,19 +13,21 @@ table{
     flex-wrap: wrap;
 }
 
-th {
+
+
+.container th {
     text-align: left;
     padding: 5px;
     color: white;
     background: rgb(247, 47, 47);
-    font-weight: normal;
+    font-size: 20px;
 }
 
-td {
+.container td {
     padding: 10px 5px;
 }
 
-td input {
+.container td input {
     width: 40px;
     height: 30px;
     padding: 5px;
@@ -35,8 +37,12 @@ td input {
     font-size: 12px;
 }
 
-.cart_page td a:hover {
+.cart_page td a {
     color: rgb(247, 47, 47);
+}
+
+.cart_page td a:hover {
+    text-decoration: underline;
 }
 
 .cart_page td img{
@@ -46,15 +52,22 @@ td input {
 
 }
 
+.container tr {
+    border-bottom: 1px #adadad solid;
+}
+
 .total-price {
     display:flex;
     justify-content: flex-end;
 }
 
 .total-price table{
-    border-top: 3px solid rgb(247, 47, 47);
     width: 100%;
     max-width: 350px;
+}
+
+.container tr:nth-child(){
+    border-bottom:rgb(247, 47, 47) solid;
 }
 
 .cart_page td:last-child{
@@ -63,4 +76,9 @@ td input {
 
 .cart_page th:last-child{
     text-align: right;
+}
+
+.container {
+    margin-left: 5%;
+    margin-right: 5%;
 }

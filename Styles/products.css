@@ -1,9 +1,9 @@
 
-
-.produs1 {
+.container tr {
+    height: 450px;
 }
 
-table {
+.container table {
     width: 100%;
 }
 
