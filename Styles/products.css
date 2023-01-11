@@ -1,27 +1,26 @@
 
 
 .produs1 {
-    
+}
+
+table {
+    width: 100%;
 }
 
 .box {
     background: white;
     text-align: center;
     width: 70%;
-    box-shadow: -1px 0 5px 5px rgba(0, 0, 0, 0.05);
-    border: 5px white solid;
+    box-shadow: -1px 0 5px 5px rgba(0, 0, 0, 0.12);
+    border: 7px white solid;
 }
 
 .produs1 img {
     width: 100%;
 }
 
-.text {
-    padding: 20px;
-}
-
-.text href {
-    font-size: 15px;
+.text_product1 {
+    font-size: 18px;
 }
 
 .rate span {
