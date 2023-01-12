@@ -95,3 +95,7 @@
     overflow: hidden;
     max-width: 250px;
 }
+
+.dummy_right {
+    min-width: 200px;
+}
