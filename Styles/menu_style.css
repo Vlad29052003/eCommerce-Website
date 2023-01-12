@@ -1,6 +1,7 @@
 .container {
     overflow-y: hidden;
-    overflow-x: auto;
+    overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
 }
 
 a:link {
