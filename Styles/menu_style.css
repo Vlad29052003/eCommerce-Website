@@ -1,3 +1,7 @@
+.container {
+    overflow-y: hidden;
+    overflow-x: auto;
+}
 
 a:link {
   color: black;
