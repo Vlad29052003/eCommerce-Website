@@ -1,67 +1,61 @@
-.container {
-    overflow-y: hidden;
-    overflow-x: auto;
-}
-
 .container table {
     width: 100%;
-    overflow-x: auto;
 }
 
 .container tr {
     height: 450px;
 }
 
-.container .left_filter, .container .dummy_right {
-    vertical-align: top;
+.container .left_filter {
     width: 14%;
 }
 
 .container table td {
-    text-align: center;
-    vertical-align: middle;
+    vertical-align: top;
     height: auto;
+    text-align: left;
 }
 
-.b_mid {
-    width: 18%;
-    max-width: 18%;
+.container .b_mid {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
-.box {
-    width: 80%;
-    min-width: 250px;
-    margin: auto;
+.container .box {
+    width: 250px;
+    margin: 25px;
     background: white;
     text-align: center;
     box-shadow: -1px 0 5px 5px rgba(0, 0, 0, 0.12);
     border: 10px white solid;
 }
 
-.box img {
+.container .box img {
     width: 100%;
 }
 
-.text_product1 {
+.container .text_product1 {
     font-size: 18px;
 }
 
-.rate span {
+.container .rate span {
     font-size: 10px;
     color: rgb(247, 47, 47);
     margin-bottom: 10px;
 }
 
-.rate span:nth-child(4),
-.rate span:nth-child(5) {
+.container .rate span:nth-child(4),
+.container .rate span:nth-child(5) {
     color: rgb(204, 204, 204);
 }
 
-.checked {
+.container .checked {
     color: orange;
 }
 
-.cart_button button {
+.container .cart_button button {
     border: none;
     border-radius: 15px 0px;
     outline: 0;
@@ -74,28 +68,38 @@
     font-size: 18px;
 }
 
-.cart_button button:hover {
+.container .cart_button button:hover {
     background: rgb(243, 148, 25);
 
 }
 
-.text_product1 :hover {
+.container .text_product1 :hover {
     color: rgb(247, 47, 47);
 
 }
 
-.text_product1 {
+.container .text_product1 {
     display: flex;
     justify-content: center;
     text-align: center;
     overflow: hidden;
 }
 
-.text_product1 .product_name {
+.container .text_product1 .product_name {
     overflow: hidden;
     max-width: 250px;
 }
 
-.dummy_right {
-    min-width: 200px;
+@media (max-width: 1200px) {
+    .container .box {
+        width: 180px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .container .box {
+        width: 120px;
+        margin: 10px;
+    }
 }
