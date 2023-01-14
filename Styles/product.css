@@ -1,53 +1,64 @@
+.container p {
+    font-size: 24px;
+}
 
-.single-product {
-
+.container .single-product {
     display: grid;
     gap: 15px;
     grid-template-columns: 2fr 3fr 3fr 3fr 2fr;
-    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-rows: 0.4fr 3fr 7fr;
     position: relative;
     overflow: hidden;
     width: 100%;
 }
 
-h4 {
+.container h3 {
+    font-size: 30px;
+}
+
+.container h4 {
     margin-top: 20px;
     font-size: 30px;
 }
 
-h1 {
+.container h1 {
+    font-size: 40px;
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 2;
     grid-column-end: 4;
 }
 
-.details {
+.container .details {
     text-align: justify;
     grid-column-start: 2;
     grid-column-end: 5;
 }
 
-.col-1 {
+.container .col-1 {
 
     grid-column-start: 2;
     grid-column-end: 3;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 
-.col-2, .col-3 {
+.col-2,
+.col-3 {
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+}
+
+.col-2 div, .col-3 div {
+    margin-bottom: 20px;
 }
 
 
 
 .single-product img {
-    width: 250px;
+    width: 400px;
 }
 
 .cart_button button {
@@ -98,7 +109,7 @@ h1 {
 
 .container .rate span {
     margin-top: 20px;
-    font-size: 10px;
+    font-size: 15px;
     color: rgb(247, 47, 47);
     margin-bottom: 10px;
 }
@@ -147,15 +158,15 @@ h1 {
     max-width: 250px;
 }
 
-h3 {
+.container h3 {
     padding-top: 20px;
 }
 
-p {
+.container p {
     padding-top: 10px;
 }
 
-.single-product .rate span {
+.single-product .col-2 .rate span {
     font-size: 25px;
     color: rgb(247, 47, 47);
     margin-bottom: 10px;
@@ -186,13 +197,13 @@ p {
     content: '';
     position: absolute;
     top: 40px;
-    left:  0;
+    left: 0;
     width: 0%;
     height: 1px;
     background: rgb(247, 47, 47);
 }
 
-.selection select:focus ~ span::before {
+.selection select:focus~span::before {
     width: 100%;
 }
 
@@ -205,7 +216,7 @@ p {
     margin: 3px 0;
 }
 
-.field input{
+.field input {
     width: 100%;
     padding: 0 5px;
     height: 40px;
@@ -230,21 +241,21 @@ p {
     content: '';
     position: absolute;
     top: 40px;
-    left:  0;
+    left: 0;
     width: 0%;
     height: 1px;
     background: rgb(247, 47, 47);
 }
 
-.field input:focus ~ label,
-.field input:valid ~ label {
+.field input:focus~label,
+.field input:valid~label {
     top: -5px;
     color: rgb(247, 47, 47);
 
 }
 
-.field input:focus ~ span::before,
-.field input:valid ~ span::before {
+.field input:focus~span::before,
+.field input:valid~span::before {
     width: 100%;
 
 }
@@ -254,6 +265,11 @@ p {
         width: 180px;
         margin: 10px;
     }
+
+
+    .single-product img {
+        width: 250px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -261,5 +277,19 @@ p {
         width: 120px;
         margin: 10px;
     }
+
+    .single-product img {
+        width: 220px;
+    }
 }
 
+@media (max-width: 400px) {
+    .container .box {
+        width: 120px;
+        margin: 10px;
+    }
+
+    .single-product img {
+        width: 100px;
+    }
+}
