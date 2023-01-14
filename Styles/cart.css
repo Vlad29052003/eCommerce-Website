@@ -66,10 +66,6 @@
     max-width: 350px;
 }
 
-.container tr:nth-child(){
-    border-bottom:rgb(247, 47, 47) solid;
-}
-
 .cart_page td:last-child{
     text-align: right;
 }
@@ -81,4 +77,26 @@
 .container {
     margin-left: 5%;
     margin-right: 5%;
+}
+
+/*---------------CHECK OUT--------------*/
+
+
+
+.checkout button {
+    border: none;
+    border-radius: 15px 0px;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgb(247, 47, 47);
+    text-align: center;
+    cursor: pointer;
+    width: 135%;
+    font-size: 18px;
+}
+
+.checkout button:hover {
+    background: rgb(243, 148, 25);
+
 }
