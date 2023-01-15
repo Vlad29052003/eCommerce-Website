@@ -2,6 +2,7 @@
 
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CASTEX</title>
         <link rel="icon" href="Images/icon.png">
         <link rel="stylesheet" type="text/css" href="Styles/menu_style.css">
@@ -44,10 +45,10 @@
                     </div>
                     <div class="product_image">
                         <label for="file">Image </label>
-                        <input type="file" id="img" name="img" accept="image/*">
+                        <input type="file" id="img" name="img" accept="image/*" required>
                     </div>
                     <div class="description">
-                        <textarea id="details" name="details" placeholder="Description"></textarea>
+                        <textarea id="details" name="details" placeholder="Description" required></textarea>
                         <span></span>
                     </div>
                     <input type="submit" value="Add Product">
